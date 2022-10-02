@@ -58,22 +58,6 @@ body {
 	color: var(--accent-color);
 }
 
-.link--current {
-	color: var(--accent-color);
-}
-.link--current::after {
-	content: '';
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-
-	width: 100%;
-	height: 4px;
-
-	background-color: var(--accent-color);
-	border-radius: 2px;
-}
-
 .logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -132,6 +116,22 @@ body {
 	color: var(--primary-text-color);
 }
 
+.link--current {
+	color: var(--accent-color);
+}
+.link--current::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+
+	width: 100%;
+	height: 4px;
+
+	background-color: var(--accent-color);
+	border-radius: 2px;
+}
+
 .contacts {
 	display: flex;
 	gap: 50px;
@@ -165,7 +165,7 @@ body {
 	background-color: var(--secondary-bg-color);
 }
 
-.footer-wrapper {
+.footer__container {
 	display: flex;
 	align-items: baseline;
 }
@@ -174,38 +174,38 @@ body {
 	margin-right: 70px;
 }
 
-.footer .logo {
+.footer__logo {
 	display: inline-block;
 	margin-bottom: 20px;
 }
-.footer .logo span {
+.logo__span--white {
 	color: var(--tertiary-text-color);
 }
 
-.footer-address {
+.address {
 	font-style: normal;
 }
 
-.footer-list {
+.address-list {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
 
-.footer-item:not(:last-child) {
+.address__item:not(:last-child) {
 	margin-bottom: 9px;
 }
 
-.footer-map-address {
+.address__map-link {
 	color: var(--tertiary-text-color);
 }
 
-.footer-link {
+.address__link {
 	color: var(--footer-color);
 }
 
 .footer-social {}
 
-.social-title {
+.footer-social__title {
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -215,7 +215,7 @@ body {
 	color: var(--tertiary-text-color);
 }
 
-.footer-social {
+.footer-social__list {
 	display: flex;
 	gap: 10px;
 }
@@ -248,7 +248,7 @@ body {
 	margin-left: 93px;
 }
 
-.footer-title {
+.footer-form__title {
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -262,7 +262,7 @@ body {
 	display: flex;
 }
 
-.footer-email {
+.footer-form__input {
 	width: 358px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -274,11 +274,11 @@ body {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 } 
-.footer-email::placeholder {
+.footer-form__input::placeholder {
 	color: var(--footer-color);
 }
 
-.footer-form-btn {
+.footer-form__btn {
 	display: flex;
 	align-items: center;
 	padding: 10px 28px;
@@ -289,12 +289,12 @@ body {
 	border-radius: 4px;
 	transition: background-color 250ms var(--timing-function);
 }
-.footer-form-btn:hover,
-.footer-form-btn:focus {
+.footer-form__btn:hover,
+.footer-form__btn:focus {
 	background-color: var(--btn-accent-color);
 }
 
-.footer-form-btn span {
+.footer-form__span {
 	margin-right: 10px;
 
 	font-weight: 700;
@@ -303,7 +303,7 @@ body {
 	letter-spacing: 0.06em;
 }
 
-.icon-send {
+.footer-form__icon {
 	fill: currentColor;
 }
 
@@ -384,7 +384,7 @@ body {
 	visibility 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.backdrop.backdrop--is-hidden {
 	opacity: 0;
 	pointer-events: none;
 	visibility: hidden;
@@ -407,11 +407,11 @@ body {
 	transition: transform 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.backdrop--is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal-close-btn {
+.modal__close-btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -427,16 +427,16 @@ body {
 
 	transition: color 250ms var(--timing-function);
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
 	color: var(--accent-color);
 }
 
-.modal-close {
+.modal__close {
 	fill: currentColor;
 }
 
-.modal-title {
+.modal__title {
 	margin-bottom: 12px;
 
 	text-align: center;
@@ -447,11 +447,11 @@ body {
 	color: var(--primary-text-color);
 }
 
-.modal-form {}
+.form {}
 
-.form-field {}
+.form__field {}
 
-.form-label {
+.form__label {
 	display: block;
 	margin-bottom: 4px;
 
@@ -465,7 +465,7 @@ body {
 	position: relative;
 }
 
-.form-input {
+.form__input {
 	display: block;
 	width: 100%;
 	padding-top: 11px;
@@ -476,17 +476,17 @@ body {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 }
-.form-input:hover,
-.form-input:focus {
+.form__input:hover,
+.form__input:focus {
 	border-color: var(--accent-color);
 }
 
-.input-wrapper:focus-within .form-icon,
-.form-input:hover + .form-icon{
+.input-wrapper:focus-within .form__icon,
+.form__input:hover + .form__icon{
 	fill: var(--accent-color);
 }
 
-.form-icon {
+.form__icon {
 	pointer-events: none;
 	position: absolute;
 	top: 50%;
@@ -496,12 +496,12 @@ body {
 	transition: fill 250ms var(--timing-function);
 }
 
-.form-comment-field {
+.form__comment-field {
 	display: block;
 	margin-bottom: 20px;
 }
 
-.form-textarea {
+.form__textarea {
 	resize: none;
 	display: block;
 	width: 100%;
@@ -511,12 +511,12 @@ body {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 }
-.form-textarea:hover,
-.form-textarea:focus {
+.form__textarea:hover,
+.form__textarea:focus {
 	border-color: var(--accent-color);
 }
 
-.form-policy-field {
+.form__policy-field {
 	display: flex;
 	align-items: center;
 	margin-bottom: 30px;
@@ -524,11 +524,11 @@ body {
 	cursor: pointer;
 }
 
-.form-checkbox {
+.form__checkbox {
 	appearance: none;
 }
 
-.checkbox-icon {
+.form__checkbox-icon {
 	display: inline-block;
 	margin-right: 7px;
 
@@ -536,29 +536,29 @@ body {
 	border-radius: 2px;
 }
 
-/* .form-checkbox:hover + .checkbox-icon {
+/* .form__checkbox:hover + .form__checkbox-icon {
 	border-color: var(--accent-color);
 } */
-.form-checkbox:checked + .checkbox-icon {
+.form__checkbox:checked + .form__checkbox-icon {
 	border: none;
 	background-color: var(--accent-color);
 }
 
 
-.policy {
+.form__policy {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 
 	color: var(--secondary-text-color);
 }
 
-.policy-link {
+.form__policy-link {
 	text-decoration: underline;
 	color: var(--accent-color);
 }
 
 
-.modal-submit {
+.form__submit {
 	display: block;
 	padding: 10px 52px;
 	margin-left: auto;
@@ -576,8 +576,8 @@ body {
 
 	transition: background-color 250ms var(--timing-function);
 }
-.modal-submit:hover,
-.modal-submit:focus {
+.form__submit:hover,
+.form__submit:focus {
 	background-color: var(--btn-accent-color);
 }
 
@@ -784,7 +784,7 @@ body {
 	gap: 30px;
 }
 
-.clients-item {
+.clients__item {
 	flex-basis: calc((100% - 150px) / 6);
 }
 
