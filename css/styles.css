@@ -58,10 +58,10 @@ body {
 	color: var(--accent-color);
 }
 
-.link.current {
+.link--current {
 	color: var(--accent-color);
 }
-.link.current::after {
+.link--current::after {
 	content: '';
 	position: absolute;
 	bottom: -1px;
@@ -74,7 +74,7 @@ body {
 	border-radius: 2px;
 }
 
-.logo-link {
+.logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -92,35 +92,39 @@ body {
 	border-bottom: 1px solid #ECECEC;
 }
 
-.header-flex {
+.header__container {
 	display: flex;
 	justify-content: space-between;
 }
 
-.header-nav {
+.nav {
 	display: flex;
 	align-items: center;
 }
 
-.header .logo-link span{
-	color: var(--quaternary-text-color);
-}
-.header .logo-link {
+
+.header__logo {
 	margin-right: 93px;
 	padding-top: 24px;
 	padding-bottom: 25px;
 }
 
-.nav-list {
+
+.logo__span {}
+.logo__span--black {
+	color: var(--quaternary-text-color);
+}
+
+.nav__list {
 	display: flex;
 	gap: 50px;
 }
 
-.nav-item {
+.nav__item {
 	position: relative;
 }
 
-.nav-link {
+.nav__link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -128,15 +132,15 @@ body {
 	color: var(--primary-text-color);
 }
 
-.header-list {
+.contacts {
 	display: flex;
 	gap: 50px;
 }
 
-.header-item {
+.contacts__item {
 }
 
-.header-link {
+.contacts__link {
 	display: flex;
 	align-items: center;
 	padding-top: 32px;
@@ -145,13 +149,7 @@ body {
 	color: var(--secondary-text-color);
 }
 
-.icon-mail {
-	margin-right: 10px;
-
-	fill: currentColor;
-}
-
-.icon-phone {
+.contacts__icon {
 	margin-right: 10px;
 
 	fill: currentColor;
@@ -176,11 +174,11 @@ body {
 	margin-right: 70px;
 }
 
-.footer .logo-link {
+.footer .logo {
 	display: inline-block;
 	margin-bottom: 20px;
 }
-.footer .logo-link span {
+.footer .logo span {
 	color: var(--tertiary-text-color);
 }
 
