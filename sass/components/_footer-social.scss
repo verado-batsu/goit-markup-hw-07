@@ -30,10 +30,11 @@
 	border-radius: 50%;
 
 	transition: background-color 250ms $timing-function;
-}
-.footer-social__link:hover,
-.footer-social__link:focus {
-	background-color: $accent-color;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+	}
 }
 
 .footer-social__icon {

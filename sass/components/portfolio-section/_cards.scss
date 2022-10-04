@@ -49,8 +49,8 @@
 	transform: translateY(100%);
 	transition: transform 250ms $timing-function;
 
-	.cards__link:hover .cards-overlay,
-	.cards__link:focus .cards-overlay {
+	.cards__link:hover &,
+	.cards__link:focus & {
 		transform: translateY(0px);
 	}
 }
@@ -70,7 +70,7 @@
 	color: $tertiary-text-color;
 }
 
-.cards-wapper {
+.cards-wrapper {
 	padding: 20px 24px;
 
 	border-bottom: 1px solid $border-color;

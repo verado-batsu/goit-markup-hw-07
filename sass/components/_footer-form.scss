@@ -27,9 +27,10 @@
 	background-color: $secondary-bg-color;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
-}
-.footer-form__input::placeholder {
-	color: $footer-color;
+
+	&::placeholder {
+		color: $footer-color;
+	}
 }
 
 .footer-form__btn {
@@ -42,10 +43,11 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	transition: background-color 250ms $timing-function;
-}
-.footer-form__btn:hover,
-.footer-form__btn:focus {
-	background-color: $btn-accent-color;
+
+	&:hover,
+	&:focus {
+		background-color: $btn-accent-color;
+	}
 }
 
 .footer-form__span {
