@@ -39,6 +39,23 @@
 	color: $primary-text-color;
 }
 
+.link--current {
+	color: $accent-color;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+
+		width: 100%;
+		height: 4px;
+
+		background-color: $accent-color;
+		border-radius: 2px;
+	}
+}
+
 .contacts {
 	display: flex;
 	gap: 50px;
