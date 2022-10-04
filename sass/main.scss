@@ -1,2 +1,14 @@
-@import url(./utils/variables);
-@import url(./base/nullstyle);
+@import "./base/nullstyle";
+
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./components/body";
+@import "./components/container";
+@import "./components/link";
+@import "./components/logo";
+
+@import "./layout/header";
+@import "./layout/main-content";
+@import "./layout/footer";
+@import "./layout/backdrop-modal";

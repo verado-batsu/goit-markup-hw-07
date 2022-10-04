@@ -1,0 +1,25 @@
+.link {
+	transition: color 250ms $timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+
+	&--current {
+		color: $accent-color;
+	}
+
+	&--current::after {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+
+		width: 100%;
+		height: 4px;
+
+		background-color: $accent-color;
+		border-radius: 2px;
+	}
+}

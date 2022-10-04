@@ -1,0 +1,14 @@
+.benefits {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	background-color: var(--primary-bg-color);
+}
+
+.benefits__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+
+	letter-spacing: 0.03em;
+}
