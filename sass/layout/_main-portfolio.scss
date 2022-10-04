@@ -1,0 +1,15 @@
+.portfolio-content {
+}
+
+.portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	background-color: $primary-bg-color;
+}
+
+.portfolio-title {
+}
+
+@import "../components/portfolio-section/filter";
+@import "../components/portfolio-section/cards";

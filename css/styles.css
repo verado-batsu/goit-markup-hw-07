@@ -650,7 +650,6 @@ body {
 .example__item {
 	position: relative;
 }
-
 .example__item::before {
 	content: '';
 	position: absolute;

@@ -1,5 +1,8 @@
 .main-content {
 }
 
-@import "../components/_main-sections.scss/hero";
-@import "../components/_main-sections.scss/benefits";
+@import "../components/main-sections/hero";
+@import "../components/main-sections/benefits";
+@import "../components/main-sections/example";
+@import "../components/main-sections/team";
+@import "../components/main-sections/clients";
